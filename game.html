@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game of Set</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+</head>
+
+<body onload="start()">
+
+    <h1>The Game of Set</h1>
+   <p><i>Find sets of 3 cards where of the 4 features - number of shapes, type of shape, shading, and color - <b>each feature</b> of the 3 cards are <b>all the same or all different</b>.</i></p>
+    <div id="txt"></div>
+
+
+    <main>
+        <div id="board">
+        <button class="dealbutton" type="button" onclick="deal3(hand, deck)">Deal 3</button>
+                <button class="dealbutton" type="button" onclick="addPlayer()">Add Player</button>
+                <button class="dealbutton" type="button" onclick="userHint(hand)">Hint</button>
+
+
+
+            <ul id="hand">
+            </ul>
+        </div>
+        <!--- Refresh page to start new game --->
+        <div id="new">
+            <button class="dealbutton" type="button" onclick="history.go(0);">New Game</button>
+        </div>
+
+    </main>
+
+    <div>
+        <table id="playersTable"></table>
+    </div>
+
+    <script src="scripts/Card.js"></script>
+    <script src="scripts/Deck.js"></script>
+    <script src="scripts/view.js"></script>
+    <script src="scripts/game.js"></script>
+    <script src="scripts/Check.js"></script>
+    <script src="scripts/Player.js"></script>
+</body>
+</html>

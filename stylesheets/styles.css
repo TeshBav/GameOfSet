@@ -1,0 +1,100 @@
+main {
+  border: 1px solid black;
+  border-radius: 25px;
+  margin: 0px auto 0px auto;
+  background: #367588;
+  background-image: url("../images/felt.png");
+  max-width: 55%;
+}
+
+#board {
+    text-align: center;
+
+}
+
+#new{
+    text-align: center;
+}
+
+
+#hand {
+  padding-left: 0px;
+}
+
+.dealbutton{
+    border: darkgoldenrod;
+    color: red;
+    text-decoration: darkgoldenrod;
+    font-size: 30px
+}
+
+.dealbutton:hover {
+    background-color: whitesmoke;
+}
+.dealbutton:active{
+    background-color: darkred;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.card {
+  background-color: white;
+  display: inline-block;
+  list-style: none;
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 100px;
+    height: 134px;
+    padding: 20px;
+    margin: 10px 10px;
+}
+
+.card:hover{
+    /*important tag, so eventlistener doesn't override it resulting in no hover after first click*/
+    background-color: grey !important;
+}
+
+
+.slot {
+  display: block;
+  margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.imagecontainer {
+  position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+body {
+  background-color: whitesmoke;
+  color: dimgray;
+  font-family: 'Libre Baskerville', sans-serif;
+  font-size: 80%;
+}
+
+table {
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Libre Baskerville', sans-serif;
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+}
+
+td {
+    padding: 8px;
+}
+
+tr {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+tr:nth-child(even) {
+    background-color: lightskyblue;
+}
